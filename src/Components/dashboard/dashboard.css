@@ -1,0 +1,140 @@
+:root {
+  --main-bg-color: #4C489D;
+  --main-text-color: #4C489D;
+  --second-text-color: #bbbec5;
+  --second-bg-color: #7875B5;
+}
+
+.primary-text {
+  color: var(--main-text-color);
+}
+
+.second-text {
+  color: var(--second-text-color);
+}
+
+.primary-bg {
+  background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+  background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+  border-radius: 100%;
+}
+
+#wrapper {
+  overflow-x: hidden;
+  /* background-image: linear-gradient(to right,
+      #4C489D,
+      #7E7BB9,
+      #7875B5,
+      #7875B5,
+      whitesmoke); */
+  background-color: whitesmoke;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15rem;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+.list-group-item {
+  border: none;
+  padding: 20px 30px;
+}
+
+.list-group-item.active {
+  background-color: transparent;
+  color: var(--main-text-color);
+  font-weight: bold;
+  border: none;
+}
+
+.col {
+  width: 200rem;
+}
+
+.btnn {
+  margin-left: 70%;
+  font-size: 15px;
+  color: #7875B5;
+  background-color: rgb(219, 218, 218);
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnn:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* CustomDialog.css */
+/* .custom-dialog {
+  width: 400px;
+} */
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
