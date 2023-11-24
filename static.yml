@@ -1,10 +1,10 @@
 services:
-- type: web
-  name: member-frontend # Replace with your app name
-  env: static
-  buildCommand: npm run build
-  staticPublishPath: ./build
-  routes:
-    - type: rewrite
-      source: /<path:.*>
-      destination: /index.html
+  - type: web
+    name: member-frontend  # Replace with your actual app name
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: ./build
+    routes:
+      - type: rewrite
+        source: /<path:.*>
+        destination: /index.html
